@@ -6,6 +6,7 @@ using Cinemachine;
 using Random = UnityEngine.Random;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Snake : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class Snake : MonoBehaviour
     public AudioSource spawn;
     public AudioSource Turn;
     public AudioSource Accelaeration;
+    public AudioSource clickButton;
     private bool isShakable = true;
     
     
@@ -66,6 +68,12 @@ public class Snake : MonoBehaviour
             textHighScore.text = "Best score: " + bestscore;
             textscore.text = "Score: " + Score;
             texteaten.text = "Eaten: " + foodmange;
+            
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("mainmenu", LoadSceneMode.Single);
+            }
+            
             if (inputGiven == false)
             {
                 if (Input.GetKeyDown(KeyCode.UpArrow))

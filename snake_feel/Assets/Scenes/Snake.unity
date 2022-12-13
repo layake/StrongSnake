@@ -342,6 +342,7 @@ MonoBehaviour:
   spawn: {fileID: 1095431868}
   Turn: {fileID: 1095431869}
   Accelaeration: {fileID: 1095431871}
+  clickButton: {fileID: 1095431873}
 --- !u!212 &282444183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1771,7 +1772,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 28085417b961f9443b6b6dd0357385dd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.03
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

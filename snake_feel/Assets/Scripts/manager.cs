@@ -6,7 +6,8 @@ using UnityEngine;
 public class manager : MonoBehaviour
 {
     private ParticleSystem explosionVFX;
-
+    
+    
     private void Awake()
     {
         explosionVFX = transform.GetChild(0).GetComponent<ParticleSystem>();
